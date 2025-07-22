@@ -48,7 +48,7 @@ const useTicTacToe = () => {
     return `Player ${isXnext ? 'X' : 'O'} turn`;
   };
   const resetGame = () => {
-    setBoard(board.fill(null));
+    setBoard(initialState());
     setIsXnext(true);
   };
 
